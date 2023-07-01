@@ -53,7 +53,19 @@ export default function Home() {
               <h1 className='text-white text-5xl font-bold mb-2'>
                 Find yout table for any occation
               </h1>
+              {/* search bar */}
 
+              <div className='text-left py-3 text-lg m-auto flex justify-center'>
+                <input className='rounded mr-3 p-2 w-[450px]
+  'placeholder='State,city or town'
+                  type='text' />
+
+                  <button 
+                  className='rounded bg-red-600 px-9 pt-2 text-white' 
+                  >
+                    Let's go
+                  </button>
+              </div>
             </div>
 
           </div>
