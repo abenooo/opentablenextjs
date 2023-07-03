@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,11 +55,13 @@ export default function Home() {
         </div>
       </div>
       {/* HEADER */} {/* CARDS */}
-      <div className="py-3 px-36 mt-10 flex flex-wrap justify-center">
+      <div className="py-3 px-36 mt-10 flex flex-wrap justify-start">
         {/* CARD */}
         <div
           className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer"
         >
+          <Link href="/restaurant/banana">
+
           <img
             src="https://resizer.otstatic.com/v2/photos/wide-huge/2/31852905.jpg"
             alt=""
@@ -77,6 +80,7 @@ export default function Home() {
             </div>
             <p className="text-sm mt-1 font-bold">Booked 3 times today</p>
           </div>
+          </Link>
         </div>
         {/* CARD */}
       </div>
