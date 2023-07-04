@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '@/componet/NavBar'
 import Header from '@/componet/Header';
 import RestaurantCards from '@/componet/RestaurantCards';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -21,7 +22,6 @@ export default function Home() {
             <div className="py-3 px-36 mt-10 flex flex-wrap">
             <RestaurantCards />
             </div>
-            {/* CARDS */}
           </main>
         </main>
       </main>
