@@ -1,8 +1,13 @@
 import Head from 'next/head'
+import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import NavBar from '@/componet/NavBar'
 import Header from '@/componet/Header';
 import RestaurantCards from '@/componet/RestaurantCards';
+const inter = Inter({ subsets: ['latin'] })
+
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -16,12 +21,17 @@ export default function Home() {
           <NavBar />
           <main>
             <Header />
-            <div className="py-3 px-36 mt-10 flex flex-wrap justify-start">
-              <RestaurantCards />
+            <div className="py-3 px-36 mt-10 flex flex-wrap">
+            <RestaurantCards />
             </div>
+            {/* CARDS */}
           </main>
         </main>
       </main>
+
+
+
+
     </>
   )
 }
