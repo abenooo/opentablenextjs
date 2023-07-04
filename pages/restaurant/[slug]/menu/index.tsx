@@ -4,6 +4,7 @@ import NavBar from '@/componet/NavBar'
 import Header from '../componet/Header'
 import RestaurantNavBar from '../componet/RestaurantNavBar'
 import Menu from '../componet/Menu'
+import Footer from '@/componet/Footer'
 function RestaurantMenu() {
   return (
     <main className="bg-gray-100 min-h-screen w-screen">
@@ -16,6 +17,8 @@ function RestaurantMenu() {
             <Menu />
           </div>
         </div>
+        
+        <Footer />
       </main>
     </main>
 

@@ -179,7 +179,7 @@ function Footer() {
                         <div className={styles.line}></div>
                         <div className={styles.copyrighttextWraper}>
                             <p className={styles.copyrighttext}>
-                                &copy; &nbsp; Copyright 2023, Happy House Sitters
+                                &copy; &nbsp; Copyright © 2023 OpenTable Australia Restaurants PTA Ltd Level 22, 357 Collins Street, Melbourne, Victoria 3000 - All rights reserved.
                             </p>
                             <p className={styles.copyrighttext}>ABN: 47 046 784 798</p>
                         </div>

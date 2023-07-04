@@ -9,6 +9,7 @@ import Description from './componet/Description'
 import Images from './componet/Images'
 import Reviews from './componet/Reviews'
 import ReservationCard from './componet/ReservationCard'
+import Footer from '@/componet/Footer'
 function RestaurantDetails() {
   return (
     <main className="bg-gray-100 min-h-screen w-screen">
@@ -28,6 +29,8 @@ function RestaurantDetails() {
            <ReservationCard />
           </div>
         </div>
+        
+        <Footer />
       </main>
     </main>
 

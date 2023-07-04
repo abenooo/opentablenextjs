@@ -20,17 +20,12 @@ export default function Home() {
           <main>
             <Header />
             <div className="py-3 px-36 mt-10 flex flex-wrap">
-            <RestaurantCards />
+              <RestaurantCards />
             </div>
-
             <Footer />
           </main>
         </main>
       </main>
-
-
-
-
     </>
   )
 }

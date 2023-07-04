@@ -4,6 +4,7 @@ import Header from "./componet/Header"
 import NavBar from "@/componet/NavBar"
 import SearchSideBar from "./componet/SearchSideBar"
 import RestaurantCards from "./componet/RestaurantCards"
+import Footer from "@/componet/Footer"
 function Search() {
   return (
     <main className='bg-gray-100 min-h-screen w-screen'>
@@ -16,6 +17,7 @@ function Search() {
             <RestaurantCards />
           </div>
         </div>
+        <Footer />
       </main>
     </main>
   )
