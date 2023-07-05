@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import NavBar from '@/componet/NavBar'
 import Header from '@/componet/Header';
 import RestaurantCards from '@/componet/RestaurantCards';
-import Footer from '@/componet/Footer';
 
 export default function Home() {
 
@@ -14,17 +12,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.PNG" />
       </Head>
-      <main className="bg-gray-100 min-h-screen w-screen">
-        <main className="max-w-screen-2xl m-auto bg-white">
-          <NavBar />
-          <main>
-            <Header />
-            <div className="py-3 px-36 mt-10 flex flex-wrap">
-              <RestaurantCards />
-            </div>
-            <Footer />
-          </main>
-        </main>
+      <main>
+        <Header />
+        <div className="py-3 px-36 mt-10 flex flex-wrap">
+          <RestaurantCards />
+        </div>
       </main>
     </>
   )
