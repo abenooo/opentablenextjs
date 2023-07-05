@@ -7,25 +7,23 @@ import Description from './componet/Description'
 import Images from './componet/Images'
 import Reviews from './componet/Reviews'
 import ReservationCard from './componet/ReservationCard'
+import RestaurantLayout from './Layout'
 function RestaurantDetails() {
   return (
-    <>
-        <Header />
-        <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
-          <div className="bg-white w-[70%] rounded p-3 shadow">
-            <RestaurantNavBar />
-            <Title />
-            <Rating />
-            <Description />
-            <Images />
-            <Reviews />
-          </div>
-          <div className="w-[27%] relative text-reg">
-           <ReservationCard />
-          </div>
-        </div>
-        </>
-        
+     <RestaurantLayout>
+      <div className="bg-white w-[70%] rounded p-3 shadow">
+        <RestaurantNavBar />
+        <Title />
+        <Rating />
+        <Description />
+        <Images />
+        <Reviews />
+      </div>
+      <div className="w-[27%] relative text-reg">
+        <ReservationCard />
+      </div>
+      </RestaurantLayout>
+
 
   )
 }
