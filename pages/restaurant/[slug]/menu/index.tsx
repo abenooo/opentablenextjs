@@ -1,18 +1,15 @@
 import React from 'react'
-import Header from '../componet/Header'
 import RestaurantNavBar from '../componet/RestaurantNavBar'
 import Menu from '../componet/Menu'
+import RestaurantLayout from '../Layout'
 function RestaurantMenu() {
   return (
-    <>
-      <Header />
-      <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
-        <div className="bg-white w-[100%] rounded p-3 shadow">
-          <RestaurantNavBar />
-          <Menu />
-        </div>
+    <RestaurantLayout>
+      <div className="bg-white w-[100%] rounded p-3 shadow">
+        <RestaurantNavBar />
+        <Menu />
       </div>
-    </>
+    </RestaurantLayout>
 
 
   )
