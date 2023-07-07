@@ -7,7 +7,7 @@ import Description from './componet/Description'
 import Images from './componet/Images'
 import Reviews from './componet/Reviews'
 import ReservationCard from './componet/ReservationCard'
-import RestaurantLayout from './Layout'
+import RestaurantLayout from './layout'
 function RestaurantDetails() {
   return (
      <RestaurantLayout>

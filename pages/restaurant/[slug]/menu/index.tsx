@@ -1,7 +1,7 @@
 import React from 'react'
 import RestaurantNavBar from '../componet/RestaurantNavBar'
 import Menu from '../componet/Menu'
-import RestaurantLayout from '../Layout'
+import RestaurantLayout from '../layout'
 function RestaurantMenu() {
   return (
     <RestaurantLayout>

@@ -12,16 +12,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favico.ico" />
       </Head>
-      <main className='min-h-screen bg-gray-1--'>
-        <main className='ml-auto bg-white max-w-screen-2xl'>
-          <main>
+      <main className="w-screen min-h-screen bg-gray-100">
+        <main className="bg-white max-w-screen-2xl">
           <Header />
-          <div className="flex flex-wrap justify-start py-3 mt-10 px-36">
-            <RestaurantCards />
-          </div>
+          <main>
+       <RestaurantCards />
           </main>
         </main>
       </main>
     </>
   )
 }
+
+
