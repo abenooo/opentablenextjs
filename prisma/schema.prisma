@@ -14,7 +14,7 @@ model Restaurant {
   images      String[]
   description String
   open_time   String
-  close_open  String
+  close_time  String
   slug        String   @unique
   items       Item[]
   price       PRICE
@@ -27,14 +27,14 @@ model Restaurant {
 }
 
 model Item {
-  id           Int         @id @default(autoincrement())
-  name         String
-  price        String
-  description  String
-  created_at   DateTime    @default(now())
-  updated_at   DateTime    @updatedAt
-  Restaurant   Restaurant? @relation(fields: [restaurantId], references: [id])
-  restaurantId Int?
+  id            Int         @id @default(autoincrement())
+  name          String
+  price         String
+  description   String
+  created_at    DateTime    @default(now())
+  updated_at    DateTime    @updatedAt
+  Restaurant    Restaurant? @relation(fields: [restaurant_id], references: [id])
+  restaurant_id Int?
 }
 
 model Location {
@@ -55,6 +55,6 @@ model Cuisine {
 
 enum PRICE {
   CHEAP
-  REGUALR
+  REGULAR
   EXPENSIVE
 }
